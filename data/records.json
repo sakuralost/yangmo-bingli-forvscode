@@ -1,0 +1,21 @@
+[
+  {
+    "id": "ae95b1fd-3b5a-420b-a921-e5cae4f5128f",
+    "caseName": "测试病例",
+    "symptom": "测试病症",
+    "contact": "123",
+    "gender": "女",
+    "age": 123,
+    "diagnosisRecords": [
+      {
+        "content": "反馈忙完i哦鞥废物改变内哦国内润吧饿哦",
+        "diagnosisTime": "2025-04-14T19:38:37.377Z",
+        "images": [
+          "blob:http://localhost:3000/890e3428-728a-4180-ab4b-fe69f9567912"
+        ]
+      }
+    ],
+    "createTime": "2025-04-14T19:38:37.397Z",
+    "lastDiagnosisTime": "2025-04-14T19:38:37.397Z"
+  }
+]
