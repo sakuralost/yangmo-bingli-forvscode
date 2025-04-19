@@ -1,24 +1,18 @@
 version: '3.8'
 
 services:
-  app:
-    build: .
+  medical-records-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medical-records-app
+    restart: always
     ports:
-      - "5000:5000"
+      - "80:3000"  # 容器内3000端口映射到主机的80端口
     environment:
-      - MONGODB_URI=mongodb://mongo:27017/medical-records
       - NODE_ENV=production
     volumes:
-      - ./uploads:/app/uploads
-    depends_on:
-      - mongo
-
-  mongo:
-    image: mongo:5.0
-    volumes:
-      - mongodb_data:/data/db
-    ports:
-      - "27017:27017"
+      - medical-records-data:/app/data
 
 volumes:
-  mongodb_data:
+  medical-records-data:
